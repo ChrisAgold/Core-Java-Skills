@@ -22,21 +22,27 @@ public class Main {
         rat.setName("Sophie");
         rat.setSpecies("Ratus");
 
-        List<Animal> animals = new ArrayList<>();
+        ArrayList<Animal> animals = new ArrayList<>();
         animals.add(cat);
         animals.add(rat);
+
+        Animal.catRemoval(animals);
         // Display how many animals we have in the list
         System.out.println("Number of animals in the list: " + animals.size());
-        // Loop
         for (int i = 0; i < animals.size(); i++) {
             System.out.println(animals.get(i).getSpecies());
-            if (animals.get(i).getSpecies().equals("Felis catus")) {
-                animals.remove(i);
-                System.out.println(animals.get(i).getSpecies());
-            } else {
-                System.out.println(animals.get(i).getSpecies());
-            }
+
+            // Loop
+//        for (int i = 0; i < animals.size(); i++) {
+//            System.out.println(animals.get(i).getSpecies());
+//            if (animals.get(i).getSpecies().equals("Felis catus")) {
+//                animals.remove(i);
+//                System.out.println(animals.get(i).getSpecies());
+//            } else {
+//                System.out.println(animals.get(i).getSpecies());
+//            }
+//        }
+            // System.out.println(animals.toString());
         }
-        System.out.println(animals.toString());
     }
 }
