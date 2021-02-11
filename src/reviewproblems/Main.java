@@ -1,5 +1,4 @@
 package reviewproblems;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,12 +24,12 @@ public class Main {
         ArrayList<Animal> animals = new ArrayList<>();
         animals.add(cat);
         animals.add(rat);
-
         Animal.catRemoval(animals);
+
         // Display how many animals we have in the list
         System.out.println("Number of animals in the list: " + animals.size());
         for (int i = 0; i < animals.size(); i++) {
-            System.out.println(animals.get(i).getSpecies());
+            System.out.println(animals.get(i).getName());
 
             // Loop
 //        for (int i = 0; i < animals.size(); i++) {

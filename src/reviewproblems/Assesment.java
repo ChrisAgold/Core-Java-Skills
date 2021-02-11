@@ -1,8 +1,10 @@
 package reviewproblems;
-
 import java.util.ArrayList;
 
 public class Assesment {
+
+
+
 
     // Method //
     public static int half(int num) {
@@ -19,5 +21,14 @@ public class Assesment {
 
     }
 
-
+    // remove cat method
+    public static ArrayList<Animal>catRemoval(ArrayList<Animal> animals) {
+        for (int i = 0; i < animals.size(); i++) {
+            if (animals.get(i).getSpecies().equals("Felis catus")) {
+                animals.remove(i);
+//                System.out.println(animals.get(i).getSpecies());
+            }  // System.out.println(animals.get(i).getSpecies());
+        }
+        return animals;
+    }
 }
